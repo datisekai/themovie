@@ -3,6 +3,7 @@
   position: relative;
   padding-bottom: 100px;
   padding-top: 60px;
+  overflow-x: hidden;
 }
 
 .detail-slider::before {
@@ -132,6 +133,8 @@
   background-color: #1a1a1a;
 }
 
+
+
 .same-genre{
   padding-top: 100px;
 }
@@ -226,11 +229,11 @@
   }
 
   .detail{
-    padding-top: 100px;
+    padding-top: 60px;
   }
 
   .gender{
-    margin-top: 100px;
+   padding-top: 330px;
   }
 
   .detail-img{
@@ -250,4 +253,22 @@
 .same-genre:hover{
   cursor: pointer;
   opacity: 0.9;
+}
+
+
+@media (max-width:390px) {
+  .detail-img img{
+    width: 250px;
+    height: 300px;
+  }
+}
+
+@media (max-width:330px) {
+  .detail-img{
+    padding-top: 370px;
+  }
+
+  .gender{
+    padding-top: 400px;
+   }
 }
