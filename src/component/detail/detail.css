@@ -233,6 +233,10 @@
     margin-top: 100px;
   }
 
+  .detail-img{
+    padding-top: 220px;
+  }
+
   .detail-img img{
     width: 300px;
     height: 400px;
