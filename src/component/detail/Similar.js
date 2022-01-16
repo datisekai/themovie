@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { API_KEY, IMAGE_API_W500 } from "../../api/constant";
 import "./detail.css";
 
@@ -19,12 +20,15 @@ const Similar = ({ id }) => {
   };
 
   return (
+   
+    
     <div className="same-genre">
       <h3 className="title-same">Some Genre</h3>
       <div className="same-list">
         {similars &&
           similars.map((similar) => (
-            <div className="same-item" key={similar.id}>
+            <Link to={`/detail/${similar.id}`} key={similar.id}>
+            <div className="same-item">
               <img
                 src={
                   similar.poster_path
@@ -34,9 +38,13 @@ const Similar = ({ id }) => {
               ></img>
               <h3>{similar.original_title || similar.title}</h3>
             </div>
+            </Link>
+            
           ))}
       </div>
     </div>
+   
+    
   );
 };
 

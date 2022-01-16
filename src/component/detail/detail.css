@@ -238,3 +238,8 @@
     margin-top: 50px;
   }
 }
+
+.same-genre:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}

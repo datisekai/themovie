@@ -24,7 +24,11 @@ const Detail = () => {
   useEffect(() => {
     getDetail(api);
     getGender(apiGender);
-  }, []);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [idDetail]);
 
   const getGender = (api) => {
     fetch(api)
