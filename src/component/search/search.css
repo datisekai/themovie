@@ -18,3 +18,9 @@
     padding: 8px 40px 8px 15px;
     font-family: sans-serif;
 }
+
+@media (max-width:739px) {
+    .search-btn form input{
+        width: calc(100%-32px);
+    }
+}
