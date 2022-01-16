@@ -6,4 +6,6 @@
 
 .App{
     background-color: #1A1A1A;
+    position: relative;
+    min-height: 100vh;
 }
