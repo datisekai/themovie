@@ -1,0 +1,33 @@
+.search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    border-bottom: solid 2px #fd7337;
+    background-color: #1A1A1A;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.search-icon i{
+    color: #fd7337;
+    font-size: 24px;
+}
+
+.logo img{
+    width: 80%;
+}
+
+.logo:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.search-icon:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}

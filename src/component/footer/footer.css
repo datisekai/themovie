@@ -1,0 +1,51 @@
+footer {
+  position: fixed;
+  height: 60px;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #1a1a1a;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2px solid #fd7337;
+  z-index: 10;
+}
+
+footer h3{
+    color: #fff;
+    font-family: sans-serif;
+    padding: 6px 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+footer h3:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.contact{
+    color: white;
+}
+
+.contact a{
+    color: white;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.contact i{
+    font-size: 30px;
+    
+}
+
+.contact a:first-child{
+    margin-left: 0;
+}
+
+.contact i:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}

@@ -1,0 +1,240 @@
+.detail {
+  width: 100%;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.detail-slider::before {
+
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(52, 73, 94, 0.2549019607843137), #333 90%);
+  position: absolute;
+  z-index: 1;
+}
+
+.detail-slider {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+}
+
+.detail-info {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.detail-img img {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #fd7337;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  backdrop-filter: blue(2px);
+}
+
+.detail-content {
+  padding: 10px 30px;
+  color: white;
+  font-family: sans-serif;
+  flex: 1;
+}
+
+.detail-content h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.detail-content p {
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.detail-genres {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.detail-genres p {
+  padding: 6px;
+  border: 2px solid white;
+  margin-left: 12px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.detail-genres p:nth-child(1) {
+  margin-left: 0;
+}
+
+.detail-btn {
+  margin-top: 20px;
+  display: flex;
+}
+
+.btn-watch {
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #fd7337;
+  background-color: transparent;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+.detail-btn a button:hover {
+  cursor: pointer;
+  background-color: #fd7337;
+}
+
+.btn-traller {
+  padding: 10px;
+  border: 1px solid #fd7337;
+  background-color: transparent;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  transition: 0.4s;
+  margin-left: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.gender,
+.same-genre {
+  background-color: #1a1a1a;
+}
+
+.title-gender,
+.title-same {
+  color: white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+.title-gender::after,
+.title-same::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: #fd7337;
+  display: block;
+  margin-top: 4px;
+  border-radius: 5px;
+}
+
+.gender-list {
+  display: flex;
+  overflow-x: scroll;
+  align-items: center;
+}
+
+.gender-item {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.gender-item h3 {
+  color: white;
+  padding: 10px 30px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.gender-item img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #fd7337;
+}
+
+.same-list {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.same-list::-webkit-scrollbar, .gender-list::-webkit-scrollbar{
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.same-list::-webkit-scrollbar-thumb, .gender-list::-webkit-scrollbar-thumb {
+  background-color: #fd7337;
+  width: 20px;
+}
+
+.same-item img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
+}
+
+.same-item {
+  margin: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+.same-item h3 {
+  margin-top: 8px;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 739px) {
+  .detail-info {
+    flex-direction: column;
+  }
+
+  .detail{
+    padding-top: 170px;
+  }
+
+  .gender{
+    margin-top: 100px;
+  }
+
+  .detail-img img{
+    width: 300px;
+    height: 400px;
+  }
+
+  .same-genre{
+    margin-top: 50px;
+  }
+}
