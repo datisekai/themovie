@@ -8,8 +8,13 @@ import Search from "./component/search/Search";
 import Results from "./component/search/Results";
 import Footer from "./component/footer/Footer";
 import Watch from "./component/watch/Watch";
+import AOS from 'aos'
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  })
   return (
     <div className="App">
       <Header/>

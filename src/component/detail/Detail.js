@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+
 import {
   API_KEY,
   IMAGE_API,
@@ -28,7 +29,10 @@ const Detail = () => {
       top: 0,
       behavior: "smooth",
     });
+  
   }, [idDetail]);
+
+ 
 
   const getGender = (api) => {
     fetch(api)
@@ -48,7 +52,7 @@ const Detail = () => {
   return (
     <div className="detail">
       <div
-        className="detail-slider"
+        className="detail-slider" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
         style={
           details.backdrop_path
             ? {

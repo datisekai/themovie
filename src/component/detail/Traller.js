@@ -34,7 +34,7 @@ function Traller() {
 
   return (
     <div
-      className="traller"
+      className="traller" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
       style={
         details.backdrop_path
           ? {

@@ -24,7 +24,7 @@ const Similar = ({ id }) => {
     
     <div className="same-genre">
       <h3 className="title-same">Some Genre</h3>
-      <div className="same-list">
+      <div className="same-list" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700">
         {similars &&
           similars.map((similar) => (
             <Link to={`/detail/${similar.id}`} key={similar.id}>

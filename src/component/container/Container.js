@@ -28,11 +28,11 @@ const Container = () => {
   return (
     <>
       <div className="container">
-        <div className="films">
+        <div className="films" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700">
           {films &&
             films.map((film) => (
               <Link to={`/detail/${film.id}`} key={film.id}>
-                <div className="film">
+                <div className="film" >
                   <div className="film-image">
                     <img
                       src={

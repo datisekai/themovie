@@ -16,7 +16,7 @@ const Search = () => {
     }
     
     return (
-        <div className='search-btn'>
+        <div className='search-btn' data-aos="fade-left" data-aos-offset="300" data-aos-duration="700">
             <form onSubmit={() => handleSubmit()}>
                 <input value={value} placeholder='Search something...' onChange={(e) => handleInput(e)}></input>
             </form>

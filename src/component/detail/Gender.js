@@ -7,7 +7,7 @@ const Gender = ({cast}) => {
     return (
         <div className="gender">
         <h3 className="title-gender">Gender</h3>
-        <div className="gender-list">
+        <div className="gender-list" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700">
           {cast &&
             topCast.map((gend) => (
               <div className="gender-item" key={gend.id}>

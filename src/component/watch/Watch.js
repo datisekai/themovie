@@ -31,7 +31,7 @@ const Watch = () => {
             backgroundImage: `url(${IMAGE_API_ORIGINAL}${detail.backdrop_path})`,
           }
         : { backgroundColor: "#1A1A1A" }
-    }>
+    } data-aos="fade-left" data-aos-offset="300" data-aos-duration="700">
       <iframe
         width="70%"
         height="315"

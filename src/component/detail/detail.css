@@ -131,6 +131,10 @@
   background-color: #1a1a1a;
 }
 
+.same-genre{
+  padding-top: 100px;
+}
+
 .title-gender,
 .title-same {
   color: white;
