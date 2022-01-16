@@ -21,6 +21,6 @@
 
 @media (max-width:739px) {
     .search-btn form input{
-        width: calc(100%-32px);
+        width: 100%;
     }
 }
